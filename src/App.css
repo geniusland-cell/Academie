@@ -80,13 +80,13 @@
 @media (min-width: 1280px) {
   .pages-container {
     padding-left: 96px;
-    padding-right: 320px;
     padding-bottom: 0;
+    padding-right: 0;
   }
 
   .page-transition {
-    padding-left: 96px;
-    padding-right: 320px;
+    padding-left: 0;
     padding-bottom: 0;
+    padding-right: 0;
   }
 }
