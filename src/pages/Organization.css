@@ -1,0 +1,231 @@
+.org-container {
+  padding: 2rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.org-member-card {
+  min-width: 100px;
+  font-size: 11px;
+}
+
+.org-member-card h4 {
+  font-size: 11px;
+}
+
+.org-member-card p {
+  font-size: 10px;
+}
+
+.org-avatar {
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.org-branches-container {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.org-gap-gerants {
+  gap: 1.5rem;
+}
+
+.org-gap-children {
+  gap: 2rem;
+}
+
+.org-button-toggle {
+  width: 24px;
+  height: 24px;
+}
+
+.org-button-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+.org-tree {
+  overflow-x: visible;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-line-vertical {
+  width: 3px;
+  height: 1.5rem;
+}
+
+.org-line-horizontal {
+  height: 3px;
+}
+
+@media (max-width: 1023px) {
+  .org-container {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .org-member-card {
+    min-width: 70px;
+    padding: 0.5rem;
+    font-size: 9px;
+  }
+
+  .org-member-card h4 {
+    font-size: 9px;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .org-member-card p {
+    font-size: 8px;
+  }
+
+  .org-avatar {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    margin: 0 auto 0.3rem;
+  }
+
+  .org-branches-container {
+    gap: 1.5rem;
+  }
+
+  .org-gap-gerants {
+    gap: 1.5rem;
+  }
+
+  .org-gap-children {
+    gap: 1rem;
+  }
+
+  .org-button-toggle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .org-button-toggle svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .org-line-vertical {
+    height: 1.5rem;
+  }
+
+  .org-line-horizontal {
+    width: 300px;
+  }
+}
+
+/* ========== MOBILE (0px - 767px) - CASCADE SIMPLE ========== */
+@media (max-width: 767px) {
+  .org-container {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* CACHE LES BRANCHES */
+  .org-branches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /* Ligne horizontale = invisible sur mobile */
+  .org-branches-container > div:first-child {
+    display: none;
+  }
+
+  .org-gap-gerants {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Affiche le contenu en cascade verticale */
+  .org-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .org-tree-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .org-member-card {
+    min-width: unset;
+    width: 90%;
+    max-width: 300px;
+    padding: 0.6rem;
+    font-size: 10px;
+  }
+
+  .org-member-card h4 {
+    font-size: 10px;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .org-member-card p {
+    font-size: 9px;
+  }
+
+  .org-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    margin: 0 auto 0.4rem;
+  }
+
+  .org-button-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .org-button-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .org-line-vertical {
+    height: 1.2rem;
+    width: 2px;
+  }
+
+  .org-gap-children {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .org-line-horizontal {
+    display: none;
+  }
+}

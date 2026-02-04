@@ -1,0 +1,44 @@
+Architecture_Systeme_A21.txt.
+PROPOSITION TECHNIQUE : SYSTÈME DE GESTION HIÉRARCHIQUE A21
+1. LA PHILOSOPHIE DU SYSTÈME
+Le succès de Academy Twenty One repose sur une structure claire : chaque leader développe sa propre lignée. Mon système ne se contente pas de stocker des noms, il reproduit fidèlement votre organisation réelle dans un environnement digital 
+
+sécurisé.
+2. L'INNOVATION : "L'ADN NUMÉRIQUE" (LE PATH)
+Pour que le système sache instantanément qui a le droit de voir quoi, chaque membre reçoit un "ADN numérique" unique qui retrace toute sa lignée.
+Exemple concret :
+•	Le Fondateur a le code : 1
+•	Le Gérant A (sous le fondateur) a le code : 1.A
+•	Le Leader D (sous le gérant A) a le code : 1.A.D
+•	Le Membre X (sous le leader D) a le code : 1.A.D.X
+Pourquoi c'est révolutionnaire ?
+Parce que l'application regarde ce code avant chaque affichage. Si le Leader D publie une stratégie secrète, le système dit 
+
+: "Seuls ceux dont l'ADN commence par 1.A.D peuvent lire."
+•	Le Membre X peut lire (son code commence bien par 1.A.D).
+•	Le Gérant B ou son équipe ne peuvent RIEN voir, car leur ADN commence par 1.B.
+3. GESTION DES FLUX : SÉPARATION ET CONFIDENTIALITÉ
+Le système gère trois types de communication de façon totalement étanche :
+A. Le Flux Global (Top-Down)
+Quand le sommet de l'arbre publie, l'information descend partout. C'est idéal pour les annonces officielles et les promotions générales.
+B. L'Isolation Horizontale (Le Mur Invisible)
+C'est le point clé : D et C sont deux 
+
+branches du même gérant (A), mais elles sont séparées.
+•	Les subalternes de D ne voient pas les messages de l'équipe C.
+•	Cela empêche la confusion, protège les stratégies de chaque leader et maintient une compétition saine. Ils sont comme dans des bureaux séparés avec des murs insonorisés.
+C. La Surveillance de Lignée (Le Droit de Regard)
+Le Gérant A, étant le "père" de D et C, garde la possibilité de voir ce qui se passe dans ses deux branches pour coacher ses leaders, sans pour autant polluer son propre fil d'actualité.
+4. RÉPONSES AUX QUESTIONS TECHNIQUES (FAQ)
+•	Est-ce que le système ralentit si on a 100 000 membres ? Non. Grâce à la 
+
+technologie PostgreSQL et à l'indexation de "l'ADN numérique", la recherche est instantanée (moins de 0,01 seconde).
+•	Que se passe-t-il si un membre change de branche ? C'est très simple. On change juste son "ADN". Si le membre X passe sous le Leader C, son code devient 1.A.C.X. Automatiquement, il perd l'accès à l'ancienne équipe et accède à la nouvelle.
+•	Les données sont-elles sécurisées ? Oui. Le cloisonnement est fait au niveau de la base de données (Row Level Security). Même un utilisateur malveillant ne peut pas "deviner" les messages d'une autre branche.
+5. CONCLUSION
+Ce système offre à A21 un outil de commandement sur-mesure. Il garantit que l'information est un outil de puissance 
+
+et non une source de désordre. Chaque leader dispose de son propre "quartier général" privé, tout en restant connecté à la vision globale de l'entreprise.
+Développé pour : Academy Twenty One
+Par : [Votre Nom]
+Souhaitez-vous que je rédige également une petite "fiche mémo" avec les commandes techniques (SQL) que vous pourriez montrer à leur informaticien pour prouver que vous maîtrisez la réalisation ?

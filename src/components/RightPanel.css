@@ -1,0 +1,76 @@
+/* ========== RIGHT PANEL SWIPE EFFECT ========== */
+
+.right-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px;
+  background: white;
+  z-index: 40;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-out;
+  transform: translateX(100%);
+}
+
+.right-panel.show {
+  transform: translateX(0);
+}
+
+/* Sur mobile/tablette (<1024px), le panel est swipeable */
+@media (max-width: 1023px) {
+  .right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    overflow-y: auto;
+    transform: translateX(100%);
+  }
+
+  .right-panel.show {
+    transform: translateX(0);
+  }
+}
+
+/* Sur desktop (≥1280px), toujours visible à droite */
+@media (min-width: 1280px) {
+  .right-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 320px;
+    transform: translateX(0) !important;
+    background: white;
+    border-left: 1px solid #e5e5e5;
+    box-shadow: none;
+  }
+}
+
+/* Overlay semi-transparent pour swipe menu */
+.right-panel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 35;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+}
+
+.right-panel-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (min-width: 1280px) {
+  .right-panel-overlay {
+    display: none;
+  }
+}

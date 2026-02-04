@@ -1,0 +1,92 @@
+/* ===== MOBILE FIRST (Par défaut) ===== */
+
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pages-container {
+  position: relative;
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  background: white;
+  overflow-y: auto;
+}
+
+.page-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ===== TABLET (768px - 1023px) ===== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pages-container {
+    padding-bottom: 220px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-transition {
+    padding-bottom: 220px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+
+@media (min-width: 1024px) {
+  .app-wrapper {
+    flex-direction: row;
+  }
+
+  .pages-container {
+    padding-left: 96px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .page-transition {
+    left: 96px;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    width: calc(100% - 96px);
+    display: block;
+    align-items: initial;
+  }
+}
+
+/* ===== XL DESKTOP (1280px+) ===== */
+
+@media (min-width: 1280px) {
+  .pages-container {
+    padding-left: 96px;
+    padding-right: 320px;
+    padding-bottom: 0;
+  }
+
+  .page-transition {
+    padding-left: 96px;
+    padding-right: 320px;
+    padding-bottom: 0;
+  }
+}
